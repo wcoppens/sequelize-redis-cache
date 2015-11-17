@@ -89,8 +89,8 @@ describe('Sequelize-Redis-Cache', function() {
           }, onErr);
       }, onErr);
   });
-  
-  
+
+
   it('should fetch stuff from database with and without cache', function(done) {
     var query = { where: { createdAt: inst.createdAt } };
     var obj = cacher('entity')
